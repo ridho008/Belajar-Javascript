@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Manupulasi Array</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+<script>
+	// 1.menambah array
+	// var arr = ['a', 1, false];
+	// console.log(arr[1]);
+
+	// 2. menghapus isi array
+	// var arr = ['Ridho', 'Surya', 'Halo'];
+	// arr[0] = undefined;
+	// console.log(arr);
+
+
+	// 3, menampilkan isi array
+	// var arr = ['Ridho', 'Surya', 'Halo', 'ok'];
+	// for(var i = 0; i < arr.length; i++) {
+	// 	console.log('Mahasiswa ke- ' + (i+1) + arr[i]);
+	// }
+
+
+
+	// method pada array
+	//1, join mengubah array dan mengabungkan menjadi string
+	// var arr = ['Ridho', 'Surya', 'Sip'];
+	// console.log(arr.join(' - '));
+
+	//2,push & pop
+	// push, berguna untuk menambahkan element di akhir array
+	// pop, berguna menghapus element terakhir
+	// arr.push('Mantap');
+	// arr.pop();
+	// console.log(arr.join(' - '))
+
+	// 3. unshift & shift
+	// unshift, menambah element baru di awal arraynya
+	// arr.unshift('Yoi');
+	// arr.shift(); // menghapus element array
+	// console.log(arr.join(' - '))
+
+
+	// 4. slice & splice
+	// splice, berguna untuk menambahkan element di tengah2 array
+	// splice(indexawal, maudihapusberapa(op), element baru...)
+	// arr.splice(1,2);
+	// console.log(arr.join(' - '));
+
+	//slice = mengiris array, lias di tampilan (awal,akhir)
+	// var arr = ['Ridho', 'Surya', 'Sip', 'qweq', 'Harun'];
+	// var arr2 = arr.slice(1,4);
+	// console.log(arr2.join(' - '));
+
+
+	// foreach
+	// var angka = [1,2,3,4,5,6,7,8];
+	// var nama = ['Ridho','Surya','Doddi'];
+	// angka.forEach(function(e) {
+	// 	console.log(e);
+	// })
+
+	// nama.forEach(function(nama, index) {
+	// 	console.log('Mahasiswa ke - ' + index + 'adalah : ' + nama);
+	// })
+
+
+	//map, megembalikan array
+	// var angka = [1,2,4,5,2,3,57,1];
+	// var angka2 = angka.map(function(e) {
+	// 	return e * 2;
+	// })
+	// console.log(angka2.join(' - '));
+
+
+	// short, menjadi tersusun
+	// var angka = [1,2,10,30,4,5,2,3,57,1];
+	// angka.sort(function(a,b) {
+	// 	return a-b;
+	// });
+	// console.log(angka.join(' - '));
+
+
+	// filter & find
+	//filter, mengembalikan banyak nilai, sedangkan find, mengembalikan 1 nilai
+	var angka = [1,2,10,30,4,5,2,3,57,1];
+	var angka2 = angka.find(function(x) {
+		return x > 15;
+	})
+	console.log(angka2);
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Belajar Rekursif</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+<script>
+	// rekursif adalah sebuah aturan yang tidak di beri batas berhenti oleh pembuat code, sehingga kita harus memberi base case (kondisi)
+	// function tes(n) {
+	// 	if(n == 0) {
+	// 		return;
+	// 	}
+	// 	console.log(n);
+	// 	tes(n-1);
+	// }
+	// tes(10);
+
+	function faktorial(n) {
+		if( n === 0 ) return 1;
+		return n * faktorial(n-1);
+	}
+	console.log(faktorial(5));
+</script>
+</body>
+</html>

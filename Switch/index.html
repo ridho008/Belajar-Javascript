@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Belajar Switch</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+
+<script>
+	// var angka = parseInt(prompt('Masukan angka!'));
+
+	// switch(angka) {
+	// 	case 1:
+	// 		alert('Anda memasukan angka 1');
+	// 		break;
+	// 	case 2:
+	// 		alert('Anda memasukan angka 2');
+	// 		break;
+	// 	case 3:
+	// 		alert('Anda memasukan angka 3');
+	// 		break;
+	// 	default:
+	// 		alert('Anda memasukan angka yang salah');
+	// 		break;
+	// }
+
+	
+var ulang = true;	
+while(ulang) {
+	var item = prompt('masukan nama makanan/minuman : \n (cth: nasi, daging, susu, hamburger)');
+	switch(item) {
+		case 'nasi':
+		case 'daging':
+		case 'susu':
+			alert('makanan / minuman SEHAT!');
+			break;
+		case 'hamburger':
+		case 'softdrink':
+			alert('makanan / minuman TIDAK SEHAT!');
+			break;
+		default:
+			alert('anda memasukan nama makanan / minuman yang salah');
+			break;
+		
+	}
+	ulang = confirm('Ulang ?');
+}
+</script>
+</body>
+</html>
